@@ -41,6 +41,8 @@ window.onload = function(){
 
     volumeSlider.max = 100;
     volumeSlider.addEventListener("input", function(){
+        muteButton.value="靜音";
+        player.unMute();
         player.setVolume(volumeSlider.value);
     })
 
@@ -66,6 +68,7 @@ window.onload = function(){
     volumeSlider2.max = 1;
     volumeSlider2.step = 0.002;
     volumeSlider2.addEventListener("input", function(){
+        muteButton2.value="靜音";
         myVideo.volume = volumeSlider2.value;
     })
 }
