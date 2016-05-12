@@ -45,8 +45,8 @@ $.fn.extend({
 		var moveY ;
 
 		$(this).css({
-			top:400,
-			left:700
+			top:250,
+			left:660
 		});
 /*隨機位置使用，因為沒用到所以先拿掉
 		if(random){
