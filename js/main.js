@@ -74,8 +74,8 @@ window.onload = function(){
 //onYouTubeIframeAPIReady名稱要打對
 function onYouTubeIframeAPIReady(){
     player=new YT.Player('player', {
-        height:'360',
-        width:'640',
+        height:'342',
+        width:'608',
         videoId:'7q2DrrQ33OQ',
         playerVars:{
             'autoplay':0,

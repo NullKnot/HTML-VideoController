@@ -46,7 +46,7 @@ $.fn.extend({
 
 		$(this).css({
 			top:250,
-			left:660
+			left:630
 		});
 /*隨機位置使用，因為沒用到所以先拿掉
 		if(random){
