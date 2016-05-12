@@ -157,6 +157,7 @@ function muteOrNotHandler(){
         player.unMute();
         muteButton.value="靜音";
         volumeSlider.value=100;
+        player.setVolume(volumeSlider.value);
     }
 }
 
@@ -210,8 +211,8 @@ function playOrPauseHandler2(){
 
     progressSlider2.max = myVideo.duration;
     progressSlider2.addEventListener("input",function(){
-        myVideo.currentTime=progressSlider2.value;
-    }
+            myVideo.currentTime=progressSlider2.value;
+        }
     );   //"change" 是改變才改 "input" 是隨時有輸入都在改
     myVideo.addEventListener("timeupdate",updateProgressBar2);
 }
